@@ -68,7 +68,7 @@ def score_headline(headline: str, ticker: str, client: anthropic.Anthropic) -> d
     )
 
     message = client.messages.create(
-        model="claude-sonnet-4-5-20250929",
+        model="claude-sonnet-4-6",
         max_tokens=150,
         messages=[{"role": "user", "content": prompt}],
     )
